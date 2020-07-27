@@ -25,12 +25,8 @@
         "https://baidu.com",
         "https://cn.bing.com"
     ]
-
     function handle_click() {
-        var x = Math.random();
-        x *= 10;
-        x = parseInt(x);
-        x %= 2;
+        var x = parseInt(Math.random()*(list.length+1),10);;
         // alert(x);
         window.open(list[x]);
     }
