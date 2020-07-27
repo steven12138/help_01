@@ -49,11 +49,11 @@
     var link;
     var id;
     window.onload = () => {
-
         link = getQueryVariable('poster');
         console.log(link);
         document.querySelector('#poster').src = link;
         id = getQueryVariable('id');
+        console.log(id);
     }
 
     function handle_click() {
